@@ -1,2 +1,1 @@
-# tailwind
 Studying Tailwind CSS
