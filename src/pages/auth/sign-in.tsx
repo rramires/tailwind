@@ -5,7 +5,9 @@ export function SignIn() {
 	return (
 		<>
 			<PageTitle title='Sign In' />
-			<h2>SignIn Page</h2>
+			<div className='text-center'>
+				<h2 className='text-2xl font-bold'>SignIn Page!</h2>
+			</div>
 		</>
 	)
 }

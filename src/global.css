@@ -1,1 +1,8 @@
 @import 'tailwindcss';
+
+@theme {
+	/* 
+	--color-cor-teste: #e63946;
+    => className='text-cor-teste' 
+    */
+}
