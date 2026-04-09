@@ -4,17 +4,14 @@ export function NotFound() {
 	return (
 		<>
 			<PageTitle title='Not Found' />
-			<div className='flex h-screen flex-col items-center justify-center'>
-				<h1 className='text-3xl font-bold'>
-					404 - Página não encontrada
-				</h1>
-				<h3 className='font-bold'>
-					Voltar para a
+			<div className='flex h-screen flex-col items-center justify-center bg-slate-900 p-8 text-slate-100'>
+				<h1 className='text-3xl font-bold'>404 - Page not found</h1>
+				<h3 className='pt-3 font-bold text-slate-500'>
 					<a
-						className='ml-1 text-blue-600 hover:text-blue-800 hover:underline'
+						className='hover: :hover:text-slate-100 ml-1 hover:underline'
 						href='/'
 					>
-						página inicial
+						Return to homepage
 					</a>
 				</h3>
 			</div>
