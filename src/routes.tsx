@@ -2,7 +2,7 @@ import { createBrowserRouter } from 'react-router'
 
 import { AppLayout } from './pages/_layouts/app'
 import { AuthLayout } from './pages/_layouts/auth'
-import { Dashboard } from './pages/app/dashboard'
+import { Home } from './pages/app/home/home'
 import { SignIn } from './pages/auth/sign-in'
 import { NotFound } from './pages/e404'
 import { ErrorPage } from './pages/error'
@@ -15,7 +15,7 @@ export const router = createBrowserRouter([
 			{
 				path: '/',
 				element: <AppLayout />,
-				children: [{ index: true, element: <Dashboard /> }],
+				children: [{ index: true, element: <Home /> }],
 			},
 			{
 				path: '/sign-in',
