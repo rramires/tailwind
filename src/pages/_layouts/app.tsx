@@ -1,18 +1,15 @@
 import { Outlet } from 'react-router'
 
+import { Sidebar } from '@/components/sidebar/sidebar'
+
 export function AppLayout() {
 	return (
-		<div className='flex h-screen flex-col'>
-			<header className='flex h-20 items-center bg-slate-800 pl-8 text-slate-200'>
-				<h1>AppLayout Header</h1>
-			</header>
-			<main className='flex flex-1'>
+		<div className='grid min-h-screen w-screen grid-cols-[minmax(18rem,20rem)_1fr]'>
+			<Sidebar />
+			<main className='px-4 pt-8 pb-12'>
 				{/* Content will change here */}
 				<Outlet />
 			</main>
-			<footer className='flex h-12 items-center bg-slate-800 pl-8 text-slate-200'>
-				<p>AppLayout Footer</p>
-			</footer>
 		</div>
 	)
 }
