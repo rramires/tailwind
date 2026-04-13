@@ -1,6 +1,14 @@
 import { PageTitle } from '@components/title/page-title'
+import { Mail } from 'lucide-react'
 
-import { InputContainer, InputControl } from '@/components/ui/input'
+import {
+	FileContainer,
+	FileControl,
+	FileList,
+	FilePreview,
+	FileTrigger,
+} from '@/components/ui/file'
+import { InputAsset, InputContainer, InputControl } from '@/components/ui/input'
 
 import { FormActions } from './form-actions'
 import { SettingsTabs } from './tabs'
@@ -60,10 +68,13 @@ export function Home() {
 							htmlFor='email'
 							className='text-sm font-medium text-zinc-700'
 						>
-							Email
+							Email address
 						</label>
 						<div className=''>
 							<InputContainer>
+								<InputAsset>
+									<Mail className='h-5 w-5 text-zinc-500' />
+								</InputAsset>
 								<InputControl
 									id='email'
 									placeholder='email@example.com'
@@ -75,7 +86,7 @@ export function Home() {
 
 					<div className='grid-cols-form grid gap-3 pb-5'>
 						<label
-							htmlFor='email'
+							htmlFor='photo'
 							className='text-sm font-medium text-zinc-700'
 						>
 							Your photo
@@ -83,8 +94,11 @@ export function Home() {
 								This will be displayed on yout profile.
 							</span>
 						</label>
-						<div className=''>{/* TODO: Implement this */}</div>
-						<div />
+						<FileContainer className='flex items-start gap-6'>
+							<FilePreview />
+							<FileTrigger />
+							<FileControl />
+						</FileContainer>
 					</div>
 
 					<div className='grid-cols-form grid gap-3 pb-5'>
@@ -148,7 +162,13 @@ export function Home() {
 								Share a few snippets of your work
 							</span>
 						</label>
-						<div className=''>{/* TODO: Implement this */}</div>
+						<div className=''>
+							<FileContainer>
+								<FileTrigger />
+								<FileList />
+								<FileControl multiple />
+							</FileContainer>
+						</div>
 						<div />
 					</div>
 				</form>
