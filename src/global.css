@@ -5,4 +5,9 @@
 	--color-cor-teste: #e63946;
     => className='text-cor-teste' 
     */
+
+	--grid-template-columns-layout: minmax(18rem, 20rem) 1fr;
+
+	--grid-template-columns-form: minmax(7.5rem, 17.5rem) minmax(25rem, 1fr)
+		minmax(0, 15rem);
 }
