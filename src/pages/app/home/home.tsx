@@ -9,6 +9,7 @@ import {
 	FileTrigger,
 } from '@/components/ui/file'
 import { InputAsset, InputContainer, InputControl } from '@/components/ui/input'
+import { Select } from '@/components/ui/select'
 
 import { FormActions } from './form-actions'
 import { SettingsTabs } from './tabs'
@@ -113,7 +114,6 @@ export function Home() {
 								<InputControl id='role' placeholder='ADMIN' />
 							</InputContainer>
 						</div>
-						<div />
 					</div>
 
 					<div className='grid-cols-form grid gap-3 pb-5'>
@@ -123,8 +123,8 @@ export function Home() {
 						>
 							Country
 						</label>
-						<div className=''>{/* TODO: Implement this */}</div>
-						<div />
+
+						<Select />
 					</div>
 
 					<div className='grid-cols-form grid gap-3 pb-5'>
@@ -135,7 +135,6 @@ export function Home() {
 							Timezone
 						</label>
 						<div className=''>{/* TODO: Implement this */}</div>
-						<div />
 					</div>
 
 					<div className='grid-cols-form grid gap-3 pb-5'>
@@ -149,7 +148,6 @@ export function Home() {
 							</span>
 						</label>
 						<div className=''>{/* TODO: Implement this */}</div>
-						<div />
 					</div>
 
 					<div className='grid-cols-form grid gap-3 pb-5'>
@@ -169,7 +167,6 @@ export function Home() {
 								<FileControl multiple />
 							</FileContainer>
 						</div>
-						<div />
 					</div>
 				</form>
 				<div className='flex justify-end pt-5'>
