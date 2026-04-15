@@ -100,8 +100,9 @@ export function Home() {
 						</label>
 						<FileContainer className='flex items-start gap-6'>
 							<FilePreview />
-							<FileTrigger />
-							<FileControl />
+							<FileTrigger>
+								<FileControl />
+							</FileTrigger>
 						</FileContainer>
 					</div>
 
@@ -197,9 +198,10 @@ export function Home() {
 						</label>
 						<div className=''>
 							<FileContainer>
-								<FileTrigger />
+								<FileTrigger>
+									<FileControl multiple />
+								</FileTrigger>
 								<FileList />
-								<FileControl multiple />
 							</FileContainer>
 						</div>
 					</div>

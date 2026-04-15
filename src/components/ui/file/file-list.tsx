@@ -43,7 +43,7 @@ export function FileList() {
 
 						<button
 							type='button'
-							className='ml-auto rounded-md p-2 hover:bg-zinc-50'
+							className='ml-auto rounded-md p-2 hover:bg-zinc-50 focus:ring-2 focus:ring-violet-400 focus:ring-offset-2 focus:outline-none'
 							onClick={() => onFileRemove(index)}
 						>
 							<Trash2 className='h-5 w-5 text-zinc-500' />
