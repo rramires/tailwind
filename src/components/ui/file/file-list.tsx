@@ -1,3 +1,4 @@
+import { useAutoAnimate } from '@formkit/auto-animate/react'
 import { Trash2, UploadCloud } from 'lucide-react'
 
 import { formatBytes } from '@/utils/format-bytes'
@@ -6,9 +7,10 @@ import { useFileContext } from './file-container-context'
 
 export function FileList() {
 	const { files, onFileRemove } = useFileContext()
+	const [parent] = useAutoAnimate()
 
 	return (
-		<div className='mt-4 space-y-3'>
+		<div ref={parent} className='mt-4 space-y-3'>
 			{files.map((file, index) => {
 				return (
 					<div
