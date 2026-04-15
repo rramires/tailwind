@@ -12,6 +12,7 @@
     "format": "prettier --write \"src/**/*.ts*\""
   },
   "dependencies": {
+    "@radix-ui/react-select": "^2.2.6",
     "@radix-ui/react-tabs": "^1.1.13",
     "@tailwindcss/vite": "^4.2.2",
     "framer-motion": "^12.38.0",

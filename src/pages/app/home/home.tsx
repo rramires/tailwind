@@ -1,6 +1,8 @@
 import { PageTitle } from '@components/title/page-title'
 import { Mail } from 'lucide-react'
 
+import BrFlag from '@/assets/br.svg'
+import UsFlag from '@/assets/us.svg'
 import {
 	FileContainer,
 	FileControl,
@@ -9,7 +11,7 @@ import {
 	FileTrigger,
 } from '@/components/ui/file'
 import { InputAsset, InputContainer, InputControl } from '@/components/ui/input'
-import { Select } from '@/components/ui/select'
+import { Select, SelectItem } from '@/components/ui/select'
 
 import { FormActions } from './form-actions'
 import { SettingsTabs } from './tabs'
@@ -124,7 +126,30 @@ export function Home() {
 							Country
 						</label>
 
-						<Select />
+						<Select placeholder='Select a country...'>
+							<SelectItem
+								value='br'
+								text='Brazil'
+								icon={
+									<img
+										src={BrFlag}
+										alt='Brazil'
+										className='h-5 w-5'
+									/>
+								}
+							/>
+							<SelectItem
+								value='us'
+								text='EUA'
+								icon={
+									<img
+										src={UsFlag}
+										alt='USA'
+										className='h-5 w-5'
+									/>
+								}
+							/>
+						</Select>
 					</div>
 
 					<div className='grid-cols-form grid gap-3 pb-5'>
@@ -134,7 +159,15 @@ export function Home() {
 						>
 							Timezone
 						</label>
-						<div className=''>{/* TODO: Implement this */}</div>
+						<div className=''>
+							<Select placeholder='Select a timezone...'>
+								<SelectItem
+									value='utc-3'
+									text='Brazil (UTC-3)'
+								/>
+								<SelectItem value='utc8' text='EUA (UTC-8)' />
+							</Select>
+						</div>
 					</div>
 
 					<div className='grid-cols-form grid gap-3 pb-5'>
