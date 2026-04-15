@@ -3,6 +3,7 @@ import { Mail } from 'lucide-react'
 
 import BrFlag from '@/assets/br.svg'
 import UsFlag from '@/assets/us.svg'
+import { Editor } from '@/components/ui/editor/editor'
 import {
 	FileContainer,
 	FileControl,
@@ -180,7 +181,8 @@ export function Home() {
 								Write a short introduction.
 							</span>
 						</label>
-						<div className=''>{/* TODO: Implement this */}</div>
+
+						<Editor />
 					</div>
 
 					<div className='grid-cols-form grid gap-3 pb-5'>
