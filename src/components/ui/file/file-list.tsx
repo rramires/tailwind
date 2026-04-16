@@ -3,6 +3,7 @@ import { Trash2, UploadCloud } from 'lucide-react'
 
 import { formatBytes } from '@/utils/format-bytes'
 
+import { Button } from '../button'
 import { useFileContext } from './file-container-context'
 
 export function FileList() {
@@ -41,13 +42,13 @@ export function FileList() {
 							</div>
 						</div>
 
-						<button
+						<Button
 							type='button'
-							className='ml-auto rounded-md p-2 hover:bg-zinc-50 focus:ring-2 focus:ring-violet-400 focus:ring-offset-2 focus:outline-none'
+							variant='ghost'
 							onClick={() => onFileRemove(index)}
 						>
 							<Trash2 className='h-5 w-5 text-zinc-500' />
-						</button>
+						</Button>
 					</div>
 				)
 			})}

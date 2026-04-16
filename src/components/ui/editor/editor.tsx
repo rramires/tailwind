@@ -1,5 +1,6 @@
 import { Bold, Italic, Link, List, ListOrdered } from 'lucide-react'
 
+import { Button } from '../button'
 import { Select, SelectItem } from '../select'
 import { Textarea } from './textarea'
 
@@ -17,51 +18,36 @@ export function Editor() {
 					<SelectItem value='md' text='Markdown' />
 				</Select>
 				<div className='flex items-center gap-1 rounded-lg border border-zinc-200 px-2 shadow-sm'>
-					<button
-						type='button'
-						className='rounded-md p-2 hover:bg-zinc-50'
-					>
+					<Button type='button' variant='ghost'>
 						<Bold
 							className='h-4 w-4 text-zinc-500'
 							strokeWidth={3}
 						/>
-					</button>
-					<button
-						type='button'
-						className='rounded-md p-2 hover:bg-zinc-50'
-					>
+					</Button>
+					<Button type='button' variant='ghost'>
 						<Italic
 							className='h-4 w-4 text-zinc-500'
 							strokeWidth={3}
 						/>
-					</button>
-					<button
-						type='button'
-						className='rounded-md p-2 hover:bg-zinc-50'
-					>
+					</Button>
+					<Button type='button' variant='ghost'>
 						<Link
 							className='h-4 w-4 text-zinc-500'
 							strokeWidth={3}
 						/>
-					</button>
-					<button
-						type='button'
-						className='rounded-md p-2 hover:bg-zinc-50'
-					>
+					</Button>
+					<Button type='button' variant='ghost'>
 						<List
 							className='h-4 w-4 text-zinc-500'
 							strokeWidth={3}
 						/>
-					</button>
-					<button
-						type='button'
-						className='rounded-md p-2 hover:bg-zinc-50'
-					>
+					</Button>
+					<Button type='button' variant='ghost'>
 						<ListOrdered
 							className='h-4 w-4 text-zinc-500'
 							strokeWidth={3}
 						/>
-					</button>
+					</Button>
 				</div>
 			</div>
 			<Textarea

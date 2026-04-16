@@ -1,3 +1,5 @@
+import { Button } from '@/components/ui/button'
+
 type FormActionsProps = {
 	form: string
 }
@@ -5,19 +7,12 @@ type FormActionsProps = {
 export function FormActions({ form }: FormActionsProps) {
 	return (
 		<div className='flex items-center gap-4'>
-			<button
-				className='rounded-lg border border-zinc-300 px-4 py-2 text-sm font-semibold text-zinc-700 shadow-sm hover:bg-zinc-50'
-				type='button'
-			>
+			<Button type='button' form={form} variant='outline'>
 				Cancel
-			</button>
-			<button
-				className='rounded-lg bg-violet-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-violet-700'
-				type='submit'
-				form={form}
-			>
+			</Button>
+			<Button type='submit' form={form}>
 				Save
-			</button>
+			</Button>
 		</div>
 	)
 }
