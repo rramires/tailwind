@@ -5,7 +5,7 @@ const button = tv({
 	base: [
 		'rounded-lg px-4 py-2 text-sm font-semibold outline-none shadow-sm',
 		'focus-visible:ring-2 focus-visible:offset-2 focus-visible:ring-violet-500',
-		'active:opacity:80',
+		'active:opacity:80 cursor-pointer',
 	],
 
 	variants: {
