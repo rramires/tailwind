@@ -6,7 +6,7 @@ export function AppLayout() {
 	return (
 		<div className='grid-cols-layout grid min-h-screen w-full overflow-hidden antialiased'>
 			<Sidebar />
-			<main className='overflow-x-hidden overflow-y-auto px-8 pt-8 pb-12'>
+			<main className='px-4 pt-24 pb-12 lg:col-start-2 lg:px-8 lg:pt-8'>
 				{/* Content will change here */}
 				<Outlet />
 			</main>
