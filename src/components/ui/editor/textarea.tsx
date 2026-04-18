@@ -5,7 +5,7 @@ export type TextareaProps = ComponentProps<'textarea'>
 export function Textarea(props: TextareaProps) {
 	return (
 		<textarea
-			className='min-h-30 w-full resize-y rounded-lg border border-zinc-300 px-3 py-2 shadow-sm outline-none focus-within:border-violet-300 focus-within:ring-4 focus-within:ring-violet-100'
+			className='min-h-30 w-full min-w-0 resize-y rounded-lg border border-zinc-300 px-3 py-2 shadow-sm outline-none focus-within:border-violet-300 focus-within:ring-4 focus-within:ring-violet-100'
 			{...props}
 		/>
 	)

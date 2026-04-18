@@ -26,7 +26,7 @@ export function Home() {
 			<SettingsTabs />
 
 			<div className='mt-6 flex flex-col'>
-				<div className='flex items-center justify-between border-b border-zinc-200 pb-5'>
+				<div className='flex flex-col justify-between gap-4 border-b border-zinc-200 pb-5 lg:flex-row lg:items-center'>
 					<div className='space-y-1'>
 						<h2 className='text-lg font-medium text-zinc-900'>
 							Personal info
@@ -43,14 +43,14 @@ export function Home() {
 					id='settings'
 					className='mt-6 flex w-full flex-col gap-5 divide-y divide-zinc-200'
 				>
-					<div className='grid-cols-form grid gap-3 pb-5'>
+					<div className='lg:grid-cols-form flex flex-col gap-3 pb-5 lg:grid'>
 						<label
 							htmlFor='firstName'
 							className='text-sm font-medium text-zinc-700'
 						>
 							Name
 						</label>
-						<div className='grid grid-cols-2 gap-6'>
+						<div className='flex flex-col gap-6 lg:grid lg:grid-cols-2'>
 							<InputContainer>
 								<InputControl
 									id='firstName'
@@ -67,7 +67,7 @@ export function Home() {
 						<div />
 					</div>
 
-					<div className='grid-cols-form grid gap-3 pb-5'>
+					<div className='lg:grid-cols-form flex flex-col gap-3 pb-5 lg:grid'>
 						<label
 							htmlFor='email'
 							className='text-sm font-medium text-zinc-700'
@@ -88,7 +88,7 @@ export function Home() {
 						<div />
 					</div>
 
-					<div className='grid-cols-form grid gap-3 pb-5'>
+					<div className='lg:grid-cols-form flex flex-col gap-3 pb-5 lg:grid'>
 						<label
 							htmlFor='photo'
 							className='text-sm font-medium text-zinc-700'
@@ -98,7 +98,7 @@ export function Home() {
 								This will be displayed on yout profile.
 							</span>
 						</label>
-						<FileContainer className='flex items-start gap-6'>
+						<FileContainer className='flex flex-col gap-5 lg:flex-row lg:items-start'>
 							<FilePreview />
 							<FileTrigger>
 								<FileControl />
@@ -106,7 +106,7 @@ export function Home() {
 						</FileContainer>
 					</div>
 
-					<div className='grid-cols-form grid gap-3 pb-5'>
+					<div className='lg:grid-cols-form flex flex-col gap-3 pb-5 lg:grid'>
 						<label
 							htmlFor='role'
 							className='text-sm font-medium text-zinc-700'
@@ -120,7 +120,7 @@ export function Home() {
 						</div>
 					</div>
 
-					<div className='grid-cols-form grid gap-3 pb-5'>
+					<div className='lg:grid-cols-form flex flex-col gap-3 pb-5 lg:grid'>
 						<label
 							htmlFor='country'
 							className='text-sm font-medium text-zinc-700'
@@ -154,7 +154,7 @@ export function Home() {
 						</Select>
 					</div>
 
-					<div className='grid-cols-form grid gap-3 pb-5'>
+					<div className='lg:grid-cols-form flex flex-col gap-3 pb-5 lg:grid'>
 						<label
 							htmlFor='timezone'
 							className='text-sm font-medium text-zinc-700'
@@ -172,7 +172,7 @@ export function Home() {
 						</div>
 					</div>
 
-					<div className='grid-cols-form grid gap-3 pb-5'>
+					<div className='lg:grid-cols-form flex flex-col gap-3 pb-5 lg:grid'>
 						<label
 							htmlFor='bio'
 							className='text-sm font-medium text-zinc-700'
@@ -186,7 +186,7 @@ export function Home() {
 						<Editor />
 					</div>
 
-					<div className='grid-cols-form grid gap-3 pb-5'>
+					<div className='lg:grid-cols-form flex flex-col gap-3 pb-5 lg:grid'>
 						<label
 							htmlFor='projects'
 							className='text-sm font-medium text-zinc-700'
