@@ -12,6 +12,7 @@ import {
 	Users,
 } from 'lucide-react'
 
+import { ThemeToggle } from '../theme/theme-toggle'
 import { Button } from '../ui/button'
 import { InputAsset, InputContainer, InputControl } from '../ui/input'
 import { Logo } from './logo'
@@ -24,11 +25,14 @@ export function Sidebar() {
 		<Collapsible.Root className='fixed top-0 right-0 left-0 z-20 flex flex-col gap-6 border-b border-zinc-200 bg-white p-4 data-[state=open]:bottom-0 lg:right-auto lg:w-80 lg:border-r lg:px-5 lg:py-8 lg:data-[state=closed]:bottom-0 dark:border-zinc-800 dark:bg-zinc-900'>
 			<div className='flex items-center justify-between'>
 				<Logo />
-				<Collapsible.Trigger className='lg:hidden'>
-					<Button type='button' variant='ghost'>
-						<Menu className='h-6 w-6' />
-					</Button>
-				</Collapsible.Trigger>
+				<div className='flex items-center'>
+					<ThemeToggle />
+					<Collapsible.Trigger className='lg:hidden'>
+						<Button type='button' variant='ghost'>
+							<Menu className='h-6 w-6' />
+						</Button>
+					</Collapsible.Trigger>
+				</div>
 			</div>
 
 			<Collapsible.Content
